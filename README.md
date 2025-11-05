@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JustValue Website
 
-## Getting Started
+Een moderne Next.js website voor JustValue, een Nederlands merk dat kwaliteitsproducten aanbiedt.
 
-First, run the development server:
+## Overzicht
 
+Deze website is een informatieve website voor JustValue, die het Nederlandse karakter van het merk benadrukt en contactinformatie bevat. Het is geen webshop, maar een algemene informatieve website die bezoekers naar bol.com leidt voor producten.
+
+## Features
+
+- **Homepage**: Hero sectie met introductie en productcategorieën overzicht
+- **Over Ons**: Informatie over JustValue, missie, visie en waarden
+- **Producten**: Overzicht van productcategorieën met links naar bol.com
+- **Contact**: Contactformulier en contactinformatie
+- **Responsive Design**: Volledig responsive voor alle apparaten
+- **Nederlandse Taal**: Volledig in het Nederlands
+
+## Technologieën
+
+- **Next.js 14**: React framework met App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first CSS framework
+- **React**: UI library
+
+## Installatie
+
+1. Installeer dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Start development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in je browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build
 
-## Learn More
+Om een productie build te maken:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Structuur
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+├── app/
+│   ├── page.tsx          # Homepage
+│   ├── over-ons/         # Over Ons pagina
+│   ├── producten/        # Producten pagina
+│   ├── contact/          # Contact pagina
+│   ├── layout.tsx        # Root layout
+│   └── globals.css       # Globale styles
+├── components/
+│   ├── Navigation.tsx    # Navigatie component
+│   └── Footer.tsx        # Footer component
+└── package.json
+```
 
-## Deploy on Vercel
+## Licentie
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Dit project is gemaakt voor JustValue.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
