@@ -44,6 +44,25 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://justvalue.nl",
   },
+  icons: {
+    icon: [
+      { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicons/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/favicons/favicon.ico",
+    apple: "/favicons/apple-touch-icon.png",
+    other: [
+      {
+        rel: "android-chrome-192x192",
+        url: "/favicons/android-chrome-192x192.png",
+      },
+      {
+        rel: "android-chrome-512x512",
+        url: "/favicons/android-chrome-512x512.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
