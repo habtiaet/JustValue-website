@@ -44,6 +44,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://justvalue.nl",
   },
+  manifest: "/manifest.json",
   icons: {
     icon: [
       { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
