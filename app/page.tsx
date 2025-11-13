@@ -190,16 +190,23 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-primary/95 to-primary-dark/95 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative h-full flex flex-col justify-end p-10 text-white z-10">
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 group-hover:text-white transition-colors duration-300 break-words">
-                  Ons verhaal
-                </h2>
-                <p className="text-lg text-gray-700 group-hover:text-white/95 transition-colors duration-300 mb-6 leading-relaxed">
-                  Ontdek wie we zijn en wat we doen
-                </p>
-                <span className="text-primary group-hover:text-white font-bold text-lg flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
-                  Meer informatie <span>→</span>
-                </span>
+              <div className="relative h-full flex flex-col justify-between p-10 text-white z-10">
+                <div className="w-16 h-16 text-gray-700 group-hover:text-white transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 group-hover:text-white transition-colors duration-300 break-words">
+                    Ons verhaal
+                  </h2>
+                  <p className="text-lg text-gray-700 group-hover:text-white/95 transition-colors duration-300 mb-6 leading-relaxed">
+                    Ontdek wie we zijn en wat we doen
+                  </p>
+                  <span className="text-primary group-hover:text-white font-bold text-lg flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
+                    Meer informatie <span>→</span>
+                  </span>
+                </div>
               </div>
             </Link>
 
@@ -209,16 +216,23 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-primary/95 to-primary-dark/95 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative h-full flex flex-col justify-end p-10 text-white z-10">
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 group-hover:text-white transition-colors duration-300 break-words">
-                  Vacatures
-                </h2>
-                <p className="text-lg text-gray-700 group-hover:text-white/95 transition-colors duration-300 mb-6 leading-relaxed">
-                  Werk bij JustValue
-                </p>
-                <span className="text-primary group-hover:text-white font-bold text-lg flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
-                  Meer informatie <span>→</span>
-                </span>
+              <div className="relative h-full flex flex-col justify-between p-10 text-white z-10">
+                <div className="w-16 h-16 text-gray-700 group-hover:text-white transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 .621-.504 1.125-1.125 1.125h-15a1.125 1.125 0 01-1.125-1.125v-1.5c0-.621.504-1.125 1.125-1.125h15c.621 0 1.125.504 1.125 1.125v1.5zM3.75 6.375v12.75c0 .621.504 1.125 1.125 1.125h14.25c.621 0 1.125-.504 1.125-1.125V6.375M3.75 6.375h16.5M9 10.5h6" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 group-hover:text-white transition-colors duration-300 break-words">
+                    Vacatures
+                  </h2>
+                  <p className="text-lg text-gray-700 group-hover:text-white/95 transition-colors duration-300 mb-6 leading-relaxed">
+                    Werk bij JustValue
+                  </p>
+                  <span className="text-primary group-hover:text-white font-bold text-lg flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
+                    Meer informatie <span>→</span>
+                  </span>
+                </div>
               </div>
             </Link>
 
@@ -228,16 +242,23 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-primary/95 to-primary-dark/95 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative h-full flex flex-col justify-end p-10 text-white z-10">
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 group-hover:text-white transition-colors duration-300 break-words">
-                  Contact
-                </h2>
-                <p className="text-lg text-gray-700 group-hover:text-white/95 transition-colors duration-300 mb-6 leading-relaxed">
-                  Neem contact met ons op
-                </p>
-                <span className="text-primary group-hover:text-white font-bold text-lg flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
-                  Meer informatie <span>→</span>
-                </span>
+              <div className="relative h-full flex flex-col justify-between p-10 text-white z-10">
+                <div className="w-16 h-16 text-gray-700 group-hover:text-white transition-colors duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 group-hover:text-white transition-colors duration-300 break-words">
+                    Contact
+                  </h2>
+                  <p className="text-lg text-gray-700 group-hover:text-white/95 transition-colors duration-300 mb-6 leading-relaxed">
+                    Neem contact met ons op
+                  </p>
+                  <span className="text-primary group-hover:text-white font-bold text-lg flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
+                    Meer informatie <span>→</span>
+                  </span>
+                </div>
               </div>
             </Link>
           </div>
