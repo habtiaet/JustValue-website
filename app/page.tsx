@@ -76,23 +76,27 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-32 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-10 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-7xl md:text-8xl font-extrabold bg-gradient-to-br from-primary to-primary-dark bg-clip-text text-transparent mb-4">5+</div>
-              <div className="text-xl md:text-2xl text-gray-800 font-bold">Jaar ervaring</div>
-              <div className="text-gray-500 mt-2">Sinds 2019</div>
-            </div>
-            <div className="p-10 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-7xl md:text-8xl font-extrabold bg-gradient-to-br from-primary to-primary-dark bg-clip-text text-transparent mb-4">200+</div>
-              <div className="text-xl md:text-2xl text-gray-800 font-bold">Producten</div>
-              <div className="text-gray-500 mt-2">In diverse categorieën</div>
-            </div>
-            <div className="p-10 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-7xl md:text-8xl font-extrabold bg-gradient-to-br from-primary to-primary-dark bg-clip-text text-transparent mb-4">50.000+</div>
-              <div className="text-xl md:text-2xl text-gray-800 font-bold">Tevreden klanten</div>
-              <div className="text-gray-500 mt-2">En groeiend</div>
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 md:p-12">
+            <div className="flex flex-col md:flex-row items-center justify-around gap-8 md:gap-4">
+              <div className="text-center flex-1">
+                <div className="text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-br from-primary to-primary-dark bg-clip-text text-transparent mb-2">5+</div>
+                <div className="text-lg md:text-xl text-gray-800 font-bold">Jaar ervaring</div>
+                <div className="text-sm md:text-base text-gray-500 mt-1">Sinds 2019</div>
+              </div>
+              <div className="hidden md:block w-px h-20 bg-gray-200"></div>
+              <div className="text-center flex-1">
+                <div className="text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-br from-primary to-primary-dark bg-clip-text text-transparent mb-2">200+</div>
+                <div className="text-lg md:text-xl text-gray-800 font-bold">Producten</div>
+                <div className="text-sm md:text-base text-gray-500 mt-1">In diverse categorieën</div>
+              </div>
+              <div className="hidden md:block w-px h-20 bg-gray-200"></div>
+              <div className="text-center flex-1">
+                <div className="text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-br from-primary to-primary-dark bg-clip-text text-transparent mb-2 break-words leading-tight">50.000+</div>
+                <div className="text-lg md:text-xl text-gray-800 font-bold break-words leading-tight">Tevreden klanten</div>
+                <div className="text-sm md:text-base text-gray-500 mt-1">En groeiend</div>
+              </div>
             </div>
           </div>
         </div>
