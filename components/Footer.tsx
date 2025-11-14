@@ -7,10 +7,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <h3 className="text-2xl font-bold mb-6 text-white">JustValue</h3>
-            <p className="text-gray-400 leading-relaxed text-sm">
+            <p className="text-gray-400 leading-relaxed text-sm mb-4">
               Een Nederlands merk dat kwaliteitsproducten aanbiedt voor
               alledaags gebruik.
             </p>
+            <div className="text-gray-400 text-xs space-y-1">
+              <p>JustValue is een merk van LJE Supplies</p>
+              <p>KVK: 82219524</p>
+              <p>BTW: NL003654455B59</p>
+            </div>
           </div>
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Navigatie</h3>
@@ -70,8 +75,8 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Contact</h3>
-            <div className="space-y-3 text-gray-400">
-              <p className="text-sm">E-mail:</p>
+            <div className="space-y-3 text-gray-400 text-sm">
+              <p>E-mail:</p>
               <a
                 href="mailto:info@justvalue.nl"
                 rel="nofollow"
@@ -79,11 +84,24 @@ export default function Footer() {
               >
                 info@justvalue.nl
               </a>
+              <p className="mt-4">Adres:</p>
+              <p className="text-gray-400">
+                Hekerbeekweg 86<br />
+                6301EN Valkenburg<br />
+                Nederland
+              </p>
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} JustValue. Alle rechten voorbehouden.</p>
+        <div className="border-t border-gray-800 mt-16 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+            <p>&copy; {new Date().getFullYear()} JustValue. Alle rechten voorbehouden.</p>
+            <div className="flex gap-6">
+              <Link href="/disclaimer" className="hover:text-white transition-colors">
+                Disclaimer
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

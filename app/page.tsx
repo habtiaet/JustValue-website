@@ -119,6 +119,7 @@ export default function Home() {
                 count: "40+ producten",
                 bgColor: "from-blue-500 to-blue-600",
                 icon: "💊",
+                image: "/images/categories/gezondheid.jpg",
               },
               {
                 name: "Huishouden",
@@ -126,6 +127,7 @@ export default function Home() {
                 count: "18+ producten",
                 bgColor: "from-green-500 to-green-600",
                 icon: "🏠",
+                image: "/images/categories/huishouden.jpg",
               },
               {
                 name: "Elektronica",
@@ -133,6 +135,7 @@ export default function Home() {
                 count: "18+ producten",
                 bgColor: "from-purple-500 to-purple-600",
                 icon: "📱",
+                image: "/images/categories/elektronica.jpg",
               },
               {
                 name: "Klussen",
@@ -140,6 +143,7 @@ export default function Home() {
                 count: "13+ producten",
                 bgColor: "from-orange-500 to-orange-600",
                 icon: "🔧",
+                image: "/images/categories/klussen.jpg",
               },
               {
                 name: "Kamperen & Outdoor",
@@ -147,23 +151,34 @@ export default function Home() {
                 count: "12+ producten",
                 bgColor: "from-teal-500 to-teal-600",
                 icon: "⛺",
+                image: "/images/categories/kamperen.jpg",
               },
             ].map((category, index) => (
               <Link
                 key={category.name}
                 href="/producten"
-                className="group relative h-80 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-200"
+                className="group relative h-80 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-200"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${category.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-                <div className="absolute top-4 right-4 text-4xl opacity-20 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110">{category.icon}</div>
+                <div className="absolute inset-0">
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-900/60 to-gray-900/40 group-hover:from-gray-900/80 group-hover:to-gray-900/60 transition-all duration-500"></div>
+                </div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${category.bgColor} opacity-0 group-hover:opacity-90 transition-opacity duration-500`}></div>
+                <div className="absolute top-4 right-4 text-4xl opacity-30 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110">{category.icon}</div>
                 <div className="relative h-full flex flex-col justify-between p-8">
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900 group-hover:text-white transition-colors duration-300">{category.name}</h3>
-                    <p className="text-gray-600 group-hover:text-white/95 transition-colors duration-300 mb-2 leading-relaxed">{category.description}</p>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white drop-shadow-lg">{category.name}</h3>
+                    <p className="text-white/95 drop-shadow-md mb-2 leading-relaxed">{category.description}</p>
                   </div>
                   <div className="flex items-center justify-between">
-                    <p className="text-sm font-semibold text-gray-500 group-hover:text-white/90 transition-colors duration-300">{category.count}</p>
-                    <span className="text-primary group-hover:text-white font-bold text-lg transform group-hover:translate-x-2 transition-all duration-300">→</span>
+                    <p className="text-sm font-semibold text-white/90 drop-shadow-md">{category.count}</p>
+                    <span className="text-white font-bold text-lg transform group-hover:translate-x-2 transition-all duration-300 drop-shadow-lg">→</span>
                   </div>
                 </div>
               </Link>
