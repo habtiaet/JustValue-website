@@ -47,11 +47,12 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: {
     icon: [
+      { url: "/favicon.ico", sizes: "any" }, // Root favicon for Google
       { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicons/favicon.ico", sizes: "any" },
     ],
-    shortcut: "/favicons/favicon.ico",
+    shortcut: "/favicon.ico", // Root favicon for better compatibility
     apple: "/favicons/apple-touch-icon.png",
     other: [
       {
