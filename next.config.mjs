@@ -10,6 +10,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/whatsapp',
+        destination: 'https://wa.me/31615571528',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
